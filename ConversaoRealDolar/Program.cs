@@ -34,9 +34,9 @@ internal class Program
 
     }
 
-    private double ConverterRealParaDolar(double valorDaCompraEmReais)
-    {
-        valorConvertidoDaCompra = valorDaCompraEmReais / cotacaoDoDolarHoje;
+     private static double ConverterRealParaDolar(double valorDaCompraEmReais)
+    {    
+       var valorConvertidoDaCompra = valorDaCompraEmReais / _cotacaoDoDolarHoje;
         return valorConvertidoDaCompra;
     }
 }
