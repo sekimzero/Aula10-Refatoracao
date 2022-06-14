@@ -10,16 +10,18 @@ internal class Program
     private static void Main()
     {
         // Cotação do dólar no dia 3 de maio de 2022.
-        double valorConvertidoDaCompra;
-        double valorCompraUsuario;
+       
+       
 
         Console.WriteLine("Digite o valor em Real da sua compra: ");
-        valorCompraUsuario = Convert.ToDouble(Console.ReadLine());
+        double valorCompraUsuario = Convert.ToDouble(Console.ReadLine());
 
-        
 
-  
-        
+        ConverterRealParaDolar(valorCompraUsuario);
+        var conversao = (ConverterRealParaDolar(valorCompraUsuario));
+
+        Console.WriteLine(conversao);
+
 
 
 
